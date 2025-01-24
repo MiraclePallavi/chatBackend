@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  
 ]
@@ -83,7 +84,7 @@ CHANNEL_LAYERS = {
         "BACKEND": "channels.layers.InMemoryChannelLayer"
     }
 }
-LOGIN_REDIRECT_URL = "chat-page"
+LOGIN_REDIRECT_URL = " "
 LOGOUT_REDIRECT_URL = "login-user"
 
 # Database
